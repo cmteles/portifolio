@@ -19,4 +19,4 @@
 
 <p>&nbsp;<img align="center" src="https://github-readme-stats.vercel.app/api?username=cmtles&show_icons=true&locale=en" alt="cmtles" /></p>
 
-<p><img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=cmtles&" alt="cmtles" /></p>
+<p><img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=cmtles&" alt="cmteles" /></p>
