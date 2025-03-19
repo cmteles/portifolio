@@ -1,0 +1,42 @@
+<div class="mb-4 mb-5 pt-1 pb-4 list-courses">
+    <div class="bar-title-list-courses">
+      
+    </div>
+    <h4 class="title-list-courses"> Quem viu este curso, também viu:</h4>
+  </div>
+  <div class="row">
+    {% for courses in courses %}
+    <div class="col-md-4 mb-4">
+      <div class="card mb-4 shadow border-light h-100">
+    
+    
+      {% if courses.image %}
+    <a href="{% url 'course' slug=courses.slug %}">
+      <image src="{{courses.image.url}}" alt="{{ courses.name }}" class="card-img-top">
+      </a>
+      {% endif %}
+      <div class="card-body text-center">
+        <h5 class="card-title">{{ courses.name }}</h5>
+        <p class="card-text"> 
+          <span class="text-muted"><del>
+            <small>R$ {{ courses.original_price }}</small>
+            </del>
+            
+          </span>
+          <span class="text-success">  
+          R$ {{ courses.discounted_price }}
+        </span>
+      </p>
+        <a href="{% url 'course' slug=courses.slug %}" class="btn btn-primary btn-sm">Mais detalhes</a>
+      </div>
+    
+    
+    </div>
+    </div>
+    {% empty %}
+  <div class="alert alert-warning">
+    Nenhum curso encontrado
+  </div>
+  <a href="/" class="btn btn-primary mt-3">Entre em contato</a>
+    {% endfor%}
+  </div>
