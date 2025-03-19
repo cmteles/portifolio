@@ -7,10 +7,10 @@ Este projeto é uma landing page desenvolvida para promover um produto ou servi�
 ## Funcionalidades
 
 - Design responsivo que se adapta a diferentes dispositivos e tamanhos de tela.
-- Seções informativas sobre o produto/serviço.
-- Formulário de contato para capturar leads.
-- Integração com redes sociais.
-- Animações e efeitos visuais para melhorar a experiência do usuário.
+- Seções informativas sobre o produto/serviço.(em desenvolvimento)
+- Formulário de contato para capturar leads.(em desenvolvimento)
+- Integração com redes sociais.(em desenvolvimento)
+- Animações e efeitos visuais para melhorar a experiência do usuário.(em desenvolvimento)
 
 ## Tecnologias Utilizadas
 
