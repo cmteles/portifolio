@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Introdução Alimentar | Ebook</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flipdown@0.3.2/dist/flipdown.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Introdução Alimentar</h1>
+            <p>Aprenda tudo sobre introdução alimentar com nosso ebook exclusivo!</p>
+        </div>
+    </header>
+
+    <section id="countdown">
+        <div class="container">
+            <h2>Um mês inteiro de desconto!</h2>
+            <div class="column-b text-center">
+                <div id="flipdown" class="flipdown flipdown-without-days flipdown__theme-dark" data-countdown="1742266799"></div><br>
+            </div>
+            <a href="https://checkout.plataforma.com" class="btn">Obter oferta</a>
+        </div>
+    </section>
+
+    <main>
+        <section id="produto">
+            <div class="container">
+                <h2>Sobre o Produto</h2>
+                <p>Nosso ebook oferece um guia completo sobre introdução alimentar para bebês, com dicas práticas e receitas saudáveis.</p>
+            </div>
+        </section>
+
+        <section id="video">
+            <div class="container">
+                <h2>Assista ao Vídeo</h2>
+                <video controls>
+                    <source src="assets/videos/introducao-alimentar.mp4" type="video/mp4">
+                    Seu navegador não suporta o elemento de vídeo.
+                </video>
+            </div>
+        </section>
+
+        <section id="provas-sociais">
+            <div class="container">
+                <h2>O que dizem nossos leitores</h2>
+                <blockquote>
+                    <p>"Este ebook mudou a forma como introduzimos alimentos ao nosso bebê. Recomendo a todos os pais!"</p>
+                    <footer>- Maria Silva</footer>
+                </blockquote>
+                <blockquote>
+                    <p>"Informações valiosas e receitas deliciosas. Um guia indispensável para pais de primeira viagem."</p>
+                    <footer>- João Pereira</footer>
+                </blockquote>
+            </div>
+        </section>
+
+        <section id="cta">
+            <div class="container">
+                <h2>Adquira já o seu Ebook!</h2>
+                <a href="https://checkout.plataforma.com" class="btn">Comprar Agora</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Introdução Alimentar. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/flipdown@0.3.2/dist/flipdown.min.js"></script>
+    <script src="assets/js/scripts.js"></script>
+    <script>
+        // Initialize Flipdown
+        var flipdown = new FlipDown(new Date().getTime() / 1000 + 2592000) // 30 days from now
+            .start()
+            .ifEnded(() => {
+                console.log('The countdown has ended!');
+            });
+    </script>
+</body>
+</html>
